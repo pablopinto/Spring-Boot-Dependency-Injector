@@ -10,13 +10,13 @@ import org.springframework.stereotype.Component;
 public class Factura {
 	
 	
-	@Value("${descripcion.factura}")
+	@Value("${factura.descripcion}")
 	private String descripcion;
 
 	@Autowired
-	private String cliente;
+	private Cliente cliente;
 	
-	
+	@Autowired
 	private List<ItemFactura> items;
 
 	public String getDescripcion() {
@@ -27,11 +27,11 @@ public class Factura {
 		this.descripcion = descripcion;
 	}
 
-	public String getCliente() {
+	public Cliente getCliente() {
 		return cliente;
 	}
 
-	public void setCliente(String cliente) {
+	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
 
