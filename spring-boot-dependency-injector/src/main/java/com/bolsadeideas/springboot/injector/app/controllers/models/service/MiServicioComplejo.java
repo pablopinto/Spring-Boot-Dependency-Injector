@@ -1,8 +1,5 @@
 package com.bolsadeideas.springboot.injector.app.controllers.models.service;
 
-import org.springframework.stereotype.Component;
-
-
 //@Component("miServicioComplejo")
 public class MiServicioComplejo implements IServicio {
 
